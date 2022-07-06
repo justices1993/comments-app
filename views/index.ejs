@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments Application</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="container">
+        <h1>Programming Career journey</h1>
+        <p>This is the platform to share about which programming you love and that landed your first job</p>
+        <ul>
+            <% for(let com of comments) {%>
+              <li><strong> Created By: <%=com.name%></strong><br> <strong>Topic:</strong>  <%=com.topic%> <br> <strong>Comment:</strong>  <br> <%=com.comment%></li>   
+           <%}%>
+        </ul>
+        <a href="/new">Add a new comment</a>
+    </header>
+    <footer>
+        <p>Created by: Justice Sithole</p> 
+        <p>I used nodejs, express and mongodb and a template called ejs for my front end</p>
+    </footer>
+</body>
+</html>
